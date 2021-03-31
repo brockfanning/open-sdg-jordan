@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: '/open-sdg-simple-starter/en',
+  remoteDataBaseUrl: '/open-sdg-jordan/en',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -117,13 +117,13 @@ var translations = {
         
 
         <!--[if IE 9]>
-        <script src="/open-sdg-simple-starter/assets/js/lib/classList.js"></script>
+        <script src="/open-sdg-jordan/assets/js/lib/classList.js"></script>
         <![endif]-->
 
         <!-- Favicons ================================================== -->
         <!-- 128x128 -->
-        <link rel="shortcut icon" type="image/ico" href="/open-sdg-simple-starter/assets/img/favicons/favicon.ico">
-        <link rel="icon" type="image/png" href="/open-sdg-simple-starter/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
+        <link rel="shortcut icon" type="image/ico" href="/open-sdg-jordan/assets/img/favicons/favicon.ico">
+        <link rel="icon" type="image/png" href="/open-sdg-jordan/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
         http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
         -->
 
@@ -133,7 +133,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-simple-starter/assets/css/style.css?v=20210331133006">
+        <link rel="stylesheet" href="/open-sdg-jordan/assets/css/style.css?v=20210331133358">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -166,16 +166,31 @@ var translations = {
   <div class="container">
 
     <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/open-sdg-simple-starter/" id="home">
-    <img src="/open-sdg-simple-starter/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+      <a class="navbar-brand" href="/open-sdg-jordan/" id="home">
+    <img src="" alt="" />
 </a>
       <div class="mobile-widgets">
-    <ul id='accessibility-nav' class='contrast-switcher'></ul></div>
+    <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
+        <div class="language-toggle-container">
+  
+  <div class="btn-group language-toggle-dropdown ">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
+      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+    <ul class="dropdown-menu"><li>
+            <a href="/open-sdg-jordan/ar/1/">
+              العربية
+            </a>
+          </li></ul>
+  </div>
+</div>
+
+    </div></div>
     </div>
 
     <div class="search-and-desktop-widgets">
       <div id="search" class="menu-target">
-  <form action="/open-sdg-simple-starter/search">
+  <form action="/open-sdg-jordan/search">
     <label class="sr-only" for="indicator_search">Search</label>
     <input type="text" name="q" id="indicator_search" title="Search" /><!--
     --><button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -183,7 +198,30 @@ var translations = {
 </div>
 
       <div class="navbar navbar-default widgets-without-menu">
-        <ul class="nav navbar-nav contrast-switcher"></ul>
+        <ul class="nav navbar-nav contrast-switcher"><li class="language-toggle-menu-header">
+            
+
+
+
+
+
+  <div class="language-toggle-container">
+  
+  <div class="btn-group language-toggle-dropdown ">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
+      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+    <ul class="dropdown-menu"><li>
+            <a href="/open-sdg-jordan/ar/1/">
+              العربية
+            </a>
+          </li></ul>
+  </div>
+</div>
+
+
+
+        </li></ul>
       </div>
     </div>
 
@@ -194,17 +232,32 @@ var translations = {
         aria-haspopup="true">
         <button data-target="menu-mobile" aria-expanded="false">Menu</button>
         <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/open-sdg-simple-starter/goals">Goals</a>
+    <a href="/open-sdg-jordan/goals">Goals</a>
 </li><li class="nav-link ">
-    <a href="/open-sdg-simple-starter/reporting-status">Reporting Status</a>
-</li><li class="nav-link ">
-    <a href="/open-sdg-simple-starter/about">About</a>
-</li><li class="nav-link ">
-    <a href="/open-sdg-simple-starter/guidance">Guidance</a>
-</li><li class="nav-link ">
-    <a href="/open-sdg-simple-starter/faq">FAQ</a>
-</li><li class="nav-link ">
-    <a href="/open-sdg-simple-starter/news">Updates</a>
+    <a href="/open-sdg-jordan/reporting-status">Reporting Status</a>
+</li><li class="language-toggle-menu-header">
+    
+
+
+
+
+
+  <div class="language-toggle-container">
+  
+  <div class="btn-group language-toggle-dropdown ">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
+      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+    <ul class="dropdown-menu"><li>
+            <a href="/open-sdg-jordan/ar/1/">
+              العربية
+            </a>
+          </li></ul>
+  </div>
+</div>
+
+
+
 </li>
 </ul>
 
@@ -214,7 +267,7 @@ var translations = {
         aria-haspopup="true">
         <button data-target="search-mobile" aria-expanded="false">Search</button>
         <div id="search-mobile" class="menu-target">
-  <form action="/open-sdg-simple-starter/search">
+  <form action="/open-sdg-jordan/search">
     <label class="sr-only" for="indicator_search-mobile">Search</label>
     <input type="text" name="q" id="indicator_search-mobile" title="Search" /><!--
     --><button aria-label="Search" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -224,17 +277,9 @@ var translations = {
     </li>
 </ul>
       <ul class="nav navbar-nav menu-target " id="menu"><li class="nav-link ">
-    <a href="/open-sdg-simple-starter/goals">Goals</a>
+    <a href="/open-sdg-jordan/goals">Goals</a>
 </li><li class="nav-link ">
-    <a href="/open-sdg-simple-starter/reporting-status">Reporting Status</a>
-</li><li class="nav-link ">
-    <a href="/open-sdg-simple-starter/about">About</a>
-</li><li class="nav-link ">
-    <a href="/open-sdg-simple-starter/guidance">Guidance</a>
-</li><li class="nav-link ">
-    <a href="/open-sdg-simple-starter/faq">FAQ</a>
-</li><li class="nav-link ">
-    <a href="/open-sdg-simple-starter/news">Updates</a>
+    <a href="/open-sdg-jordan/reporting-status">Reporting Status</a>
 </li>
 </ul>
 
@@ -251,8 +296,8 @@ var translations = {
 <div class="container">
   <ol class="breadcrumb">
   
-  <li><a href="/open-sdg-simple-starter/">Home</a></li>
-  <li><a href="/open-sdg-simple-starter/goals">Goals</a></li>
+  <li><a href="/open-sdg-jordan/">Home</a></li>
+  <li><a href="/open-sdg-jordan/goals">Goals</a></li>
   
   
 </ol>
@@ -274,6 +319,7 @@ var translations = {
     </div>
   </div>
 </div>
+
 
 <div id="main-content" class="container" role="main">
 
@@ -297,21 +343,20 @@ var translations = {
           
           
           
-          
-          
-          
-          
-          
 
           <div class="goal-indicator">
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 1.1.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-simple-starter/1-1-1">Proportion of population below international poverty line (1.9$) by Time</a></span>
+            <span class="indicator-name"><a href="/open-sdg-jordan/1-1-1">Proportion of population below international poverty line (1.9$) by Time</a></span>
             <span class="sr-only">Indicator status</span>
-            <span class="status complete">
-              Reported online
-            </span>
+            
+
+
+<span class="status complete">
+    Reported online
+</span>
+
             
 
           </div>
@@ -329,21 +374,20 @@ var translations = {
           
           
           
-          
-          
-          
-          
-          
 
           <div class="goal-indicator">
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 1.2.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-simple-starter/1-2-1">1.2.1: Poverty Rate by Governorate and Year by Governorate and Time</a></span>
+            <span class="indicator-name"><a href="/open-sdg-jordan/1-2-1">1.2.1: Poverty Rate by Governorate and Year by Governorate and Time</a></span>
             <span class="sr-only">Indicator status</span>
-            <span class="status complete">
-              Reported online
-            </span>
+            
+
+
+<span class="status complete">
+    Reported online
+</span>
+
             
 
           </div>
@@ -361,31 +405,25 @@ var translations = {
           
           
           
-          
-          
-          
-          
-          
 
           <div class="goal-indicator">
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 1.5.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-simple-starter/1-5-1">Number of deaths, missing persons and directly affected persons attributed to disasters by Sub-indicators and Time</a></span>
+            <span class="indicator-name"><a href="/open-sdg-jordan/1-5-1">Number of deaths, missing persons and directly affected persons attributed to disasters by Sub-indicators and Time</a></span>
             <span class="sr-only">Indicator status</span>
-            <span class="status complete">
-              Reported online
-            </span>
+            
+
+
+<span class="status complete">
+    Reported online
+</span>
+
             
 
           </div>
         
 
-          
-          
-          
-          
-          
           
           
           
@@ -394,21 +432,20 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 1.5.2</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-simple-starter/1-5-2">Direct economic loss in relation to global GDP, damage to critical infrastructure and number of disruptions to basic services, attributed to disasters by Yeat and Sub-indicators</a></span>
+            <span class="indicator-name"><a href="/open-sdg-jordan/1-5-2">Direct economic loss in relation to global GDP, damage to critical infrastructure and number of disruptions to basic services, attributed to disasters by Yeat and Sub-indicators</a></span>
             <span class="sr-only">Indicator status</span>
-            <span class="status complete">
-              Reported online
-            </span>
+            
+
+
+<span class="status complete">
+    Reported online
+</span>
+
             
 
           </div>
         
 
-          
-          
-          
-          
-          
           
           
           
@@ -417,11 +454,15 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 1.5.3</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-simple-starter/1-5-3">1.5.3 Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015–2030 by Sub-indicator and Time</a></span>
+            <span class="indicator-name"><a href="/open-sdg-jordan/1-5-3">1.5.3 Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015–2030 by Sub-indicator and Time</a></span>
             <span class="sr-only">Indicator status</span>
-            <span class="status complete">
-              Reported online
-            </span>
+            
+
+
+<span class="status complete">
+    Reported online
+</span>
+
             
 
           </div>
@@ -430,21 +471,20 @@ var translations = {
           
           
           
-          
-          
-          
-          
-          
 
           <div class="goal-indicator">
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 1.5.4</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-simple-starter/1-5-4">Proportion of local governments that adopt and implement local disaster by Time and Sub-indicators</a></span>
+            <span class="indicator-name"><a href="/open-sdg-jordan/1-5-4">Proportion of local governments that adopt and implement local disaster by Time and Sub-indicators</a></span>
             <span class="sr-only">Indicator status</span>
-            <span class="status complete">
-              Reported online
-            </span>
+            
+
+
+<span class="status complete">
+    Reported online
+</span>
+
             
 
           </div>
@@ -462,21 +502,20 @@ var translations = {
           
           
           
-          
-          
-          
-          
-          
 
           <div class="goal-indicator">
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 1.6.2</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-simple-starter/1-6-2">Proportion of total government spending on essential services (education, health and social protection) by Government spending percentage on and Time</a></span>
+            <span class="indicator-name"><a href="/open-sdg-jordan/1-6-2">Proportion of total government spending on essential services (education, health and social protection) by Government spending percentage on and Time</a></span>
             <span class="sr-only">Indicator status</span>
-            <span class="status complete">
-              Reported online
-            </span>
+            
+
+
+<span class="status complete">
+    Reported online
+</span>
+
             
 
           </div>
@@ -507,10 +546,6 @@ var translations = {
               <li>
                 
                   <a href="https://facebook.com/MyFacebookAccount" target="_blank">Facebook</a>
-                
-                </li>
-              <li>
-                <a href="/open-sdg-simple-starter/about/cookies-and-privacy/">Cookies</a>
                 
                 </li>
               
@@ -547,12 +582,12 @@ var translations = {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/open-sdg-simple-starter/assets/js/sdg.js?v=20210331133006'></script>
+<script src='/open-sdg-jordan/assets/js/sdg.js?v=20210331133358'></script>
 
 
     
     
-    <script src="/open-sdg-simple-starter/assets/js/custom.js?v=20210331133006"></script><script>
+    <script src="/open-sdg-jordan/assets/js/custom.js?v=20210331133358"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
