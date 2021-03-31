@@ -6,7 +6,7 @@
 # The following should be changed according to the hosting environment. In the most
 # common environment, Github Pages, you would need to set this according to the name
 # of this repository, after a preceding slash. Eg: /my-repository-name
-docs_baseurl: /open-sdg-simple-starter
+docs_baseurl: /open-sdg-jordan
 
 # Languages
 # ---------
@@ -14,6 +14,7 @@ docs_baseurl: /open-sdg-simple-starter
 # languages. Each build is in its own subfolder - one for each language.
 languages:
   - en
+  - ar
 
 # Destination directory
 # ---------------------
